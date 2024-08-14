@@ -1,0 +1,13 @@
+[workspace]
+
+resolver = "2"
+
+members = [
+    "projects/hello_world_actixweb_htmx_completed",
+    "projects/todo_list_app_part1",
+    "projects/todo_list_app_part2",
+    "projects/todo_list_app_part3",
+    "projects/todo_list_app_part4",
+    "projects/todo_list_app_part5",
+    "projects/todo_list_app_part6",
+]
