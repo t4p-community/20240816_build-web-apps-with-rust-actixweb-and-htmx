@@ -2,7 +2,7 @@
 
 resolver = "2"
 
-members = [
+members = [ "projects/hello_world_actixweb_htmx",
     "projects/hello_world_actixweb_htmx_completed",
     "projects/todo_list_app_part1",
     "projects/todo_list_app_part2",

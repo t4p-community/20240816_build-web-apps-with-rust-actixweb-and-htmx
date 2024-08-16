@@ -147,7 +147,7 @@
     </html>
     ```
 
-1. Create a new file named `route.ts` in the `src` folder. Add the following code to the file.
+1. Create a new file named `routes.ts` in the `src` folder. Add the following code to the file.
 
     ```rust
     use actix_web::{get, HttpResponse, Responder};

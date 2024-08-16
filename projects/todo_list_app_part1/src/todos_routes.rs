@@ -6,8 +6,7 @@ struct Todo {
 
 #[get("/todos/list")]
 pub async fn todos_list() -> impl Responder {
-
-    let todos = vec![
+    let todos = [
         Todo {
             task: "Buy groceries".to_string(),
         },
@@ -22,7 +21,8 @@ pub async fn todos_list() -> impl Responder {
     let todos_list_html = todos
         .iter()
         .map(|todo| format!("<li>{}</li>", todo.task))
-        .collect::<Vec<String>>().join("\n");
+        .collect::<Vec<String>>()
+        .join("\n");
 
     HttpResponse::Ok().body(todos_list_html)
 }

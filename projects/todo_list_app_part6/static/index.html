@@ -14,7 +14,8 @@
     <h1>To Do App</h1>
     <div class="container">
         <p id="error-message"></p>
-        <form id="new-todo" hx-post="/todos/add" hx-trigger="submit" hx-swap="innerHTML" hx-target="#todos-list"
+        <form id="new-todo" hx-post="/todos/add"
+            hx-trigger="submit" hx-swap="innerHTML" hx-target="#todos-list"
             hx-on:htmx:after-request="this.reset();"
             hx-on::response-error="document.querySelector('#error-message').textContent = 'Adding the todo failed!';">
             <input type="hidden" name="completed" value="false">

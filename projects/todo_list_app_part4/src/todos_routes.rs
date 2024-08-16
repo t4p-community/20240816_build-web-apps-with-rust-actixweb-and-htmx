@@ -21,7 +21,7 @@ pub fn render_todo_list_html(todos_data: &TodosData) -> String {
                         hx-target="#todos-list"
                         hx-trigger="click from:(form#todo_form_{} input[type=checkbox])">
                     <input type='hidden' name='todo_id' value='{}'>
-                    <input type='checkbox' {}> {}`
+                    <input type='checkbox' {}> {}
                 </form></li>"##, todo.id, todo.id, todo.id, completed, todo.task)
         })
         .collect::<Vec<String>>()
